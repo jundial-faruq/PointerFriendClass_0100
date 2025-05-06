@@ -22,7 +22,24 @@ public:
     void displayAll(orang &a);
 };
 
-int main(){
+void siswa::displayAll(orang&a)
+{
+    cout << Id << endl << a.nama;
+}
 
+void orang::setNama(string pNama) 
+{
+    nama = pNama;
+}
+void siswa::setId(int pId)
+{
+    Id = pId;
+}
+
+int main(){
+    orang joko;
+    joko.setNama("Joko Susilo");
+    siswa joko_siswa;
+    
     return 0;
 }
